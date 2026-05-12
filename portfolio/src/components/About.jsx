@@ -16,7 +16,7 @@ function About() {
             <img
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
               alt="about"
-              className="rounded-3xl shadow-2xl"
+              className="rounded-3xl shadow-2xl hover:scale-105 transition duration-300"
             />
           </div>
 
