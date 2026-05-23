@@ -7,7 +7,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #0f172a;
+  background: #020617;
   color: white;
   font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }

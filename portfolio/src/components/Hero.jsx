@@ -1,45 +1,112 @@
+import profile from "../assets/developer.png";
+
 function Hero() {
   return (
+
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-6"
+      className="min-h-screen py-32 px-6 bg-gradient-to-b from-black via-zinc-950 to-black flex items-center"
     >
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
-        <div>
-          <p className="text-cyan-400 text-lg mb-4">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+
+        {/* Left Side */}
+
+        <div className="text-center md:text-left">
+
+          {/* Badge */}
+
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 mb-8">
+
+            <div className="w-2 h-2 rounded-full bg-violet-400"></div>
+
             Frontend Developer
-          </p>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
-            Building clean modern web experiences.
+          </div>
+
+          {/* Heading */}
+
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight mb-8">
+
+            Hi, I'm
+            <br />
+
+            <span className="text-violet-400">
+              Saurabh Uniyal
+            </span>
+
           </h1>
 
-          <p className="text-gray-400 text-lg mb-8 max-w-lg">
-            I create responsive websites using React and Tailwind CSS.
+          {/* Paragraph */}
+
+          <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-xl mx-auto md:mx-0">
+
+            I build responsive and modern web applications
+            with clean UI, smooth interactions, and premium
+            user experiences using React and Tailwind CSS.
+
           </p>
 
-          <div className="flex gap-4">
-            <button className="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition duration-300">
-              View Projects
-            </button>
+          {/* Buttons */}
 
-            <button className="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300">
-              Contact Me
-            </button>
+          <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start">
+
+            <a href="#projects">
+
+              <button className="bg-violet-500 hover:bg-violet-600 transition duration-300 px-7 py-4 rounded-2xl font-semibold shadow-lg hover:scale-105">
+
+                View Projects
+
+              </button>
+
+            </a>
+
+            <a href="#contact">
+
+              <button className="border border-violet-500/30 hover:border-violet-400 hover:bg-violet-500/10 transition duration-300 px-7 py-4 rounded-2xl font-semibold">
+
+                Contact Me
+
+              </button>
+
+            </a>
+
+            <a href="/resume.pdf" download>
+
+              <button className="border border-white/10 hover:border-violet-400 hover:bg-violet-500/10 transition duration-300 px-7 py-4 rounded-2xl font-semibold">
+
+                Download CV
+
+              </button>
+
+            </a>
+
           </div>
+
         </div>
 
-        <div className="rounded-3xl shadow-2xl hover:scale-105 transition duration-300">
+        {/* Right Side */}
+
+        <div className="relative flex justify-center">
+
+          {/* Glow */}
+
+          <div className="absolute w-[350px] h-[350px] bg-violet-500/20 blur-[120px] rounded-full"></div>
+
+          {/* Image */}
+
           <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-            alt="developer"
-            className="w-full max-w-md rounded-3xl"
+            src={profile}
+            alt="Developer"
+            className="relative w-full max-w-md rounded-[40px] border border-violet-500/20 shadow-[0_0_80px_rgba(139,92,246,0.2)]"
           />
+
         </div>
 
       </div>
+
     </section>
+
   );
 }
 
