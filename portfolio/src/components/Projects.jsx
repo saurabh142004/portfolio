@@ -133,7 +133,10 @@ function Projects() {
         </div>
 
       </div>
-
+    
+    <p className="text-sm text-violet-300/70 mt-6 text-center">
+      Note: Some live project demos are temporarily unavailable and will be restored soon. Thank you.
+    </p>
     </section>
   );
 }
