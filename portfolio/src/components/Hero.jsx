@@ -2,15 +2,14 @@ import profile from "../assets/developer.png";
 
 function Hero() {
   return (
-
     <section
       id="home"
-      className="min-h-screen py-32 px-6 bg-gradient-to-b from-black via-zinc-950 to-black flex items-center"
+      className="min-h-screen py-32 px-6 bg-gradient-to-b from-black via-zinc-950 to-black flex items-center overflow-hidden"
     >
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 
-        {/* Left Side */}
+        {/* LEFT SIDE */}
 
         <div className="text-center md:text-left">
 
@@ -85,20 +84,24 @@ function Hero() {
 
         </div>
 
-        {/* Right Side */}
+        {/* RIGHT SIDE */}
 
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center items-center">
 
-          {/* Glow */}
+          {/* Background Glow */}
 
           <div className="absolute w-[350px] h-[350px] bg-violet-500/20 blur-[120px] rounded-full"></div>
+
+          {/* Secondary Glow */}
+
+          <div className="absolute inset-0 bg-violet-500/10 blur-3xl rounded-full"></div>
 
           {/* Image */}
 
           <img
             src={profile}
-            alt="Developer"
-            className="relative w-full max-w-md rounded-[40px] border border-violet-500/20 shadow-[0_0_80px_rgba(139,92,246,0.2)]"
+            alt="Saurabh Uniyal"
+            className="relative w-full max-w-md rounded-3xl border border-violet-500/20 shadow-[0_0_50px_rgba(168,85,247,0.35)] object-cover hover:scale-105 transition duration-500"
           />
 
         </div>
@@ -106,7 +109,6 @@ function Hero() {
       </div>
 
     </section>
-
   );
 }
 
